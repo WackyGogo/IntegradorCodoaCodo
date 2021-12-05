@@ -1,0 +1,21 @@
+.contenedor{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 50% 1fr;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+
+.idHeader{
+    grid-area:header;
+}
+
+.idMain{
+    grid-area: main;
+}
+
+.idFooter{
+    grid-area:footer;
+}

@@ -1,0 +1,22 @@
+@keyframes desenfoque{
+    from {filter: blur(0);}
+    to {filter: blur(5px);}
+}
+
+@keyframes fadeIn {
+    from {filter: opacity(0);}
+    to {filter: opacity(100);}
+}
+
+.selector:hover{
+    animation-name: desenfoque;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+}
+
+.entrada{
+    filter: opacity(0);
+}
+.entrada:hover{
+    animation: fadeIn 1s forwards;
+}
