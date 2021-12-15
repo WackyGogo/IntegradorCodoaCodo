@@ -1,1 +1,1 @@
-web: node src/main/resources/static/index.html
+web: node index.html
