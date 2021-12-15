@@ -12,7 +12,7 @@ function grabarPerdido() {
         color: c,
     }
 
-    let url = "http://localhost:8080/perdidos";
+    let url = "http://ec2-23-23-181-251.compute-1.amazonaws.com:5432/perdidos";
     var options = {
         method: 'POST',
         body: JSON.stringify(perdidos),
@@ -41,7 +41,7 @@ function grabarEncontrado() {
             sexo: s
         }
 
-        let urlEnc = "http://localhost:8080/encontrados";
+        let urlEnc = "http://ec2-23-23-181-251.compute-1.amazonaws.com:5432/encontrados";
         var options = {
             method: 'POST',
             body: JSON.stringify(encontrados),
