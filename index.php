@@ -1,0 +1,1 @@
+<?php include_once("./src/main/resources/static/home.html");?>

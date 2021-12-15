@@ -1,1 +1,1 @@
-web: ./src/main/resources/static
+web: index.php
