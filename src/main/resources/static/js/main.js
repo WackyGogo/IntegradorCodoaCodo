@@ -6,8 +6,8 @@ const app = new Vue({
         encontrados:[]
     },
     created() {
-        var urlPer = 'http://ec2-23-23-181-251.compute-1.amazonaws.com:5432/perdidos';
-        var urlEnc = 'http://ec2-23-23-181-251.compute-1.amazonaws.com:5432/encontrados';
+        var urlPer = 'http://animalesperdidos.herokuapp.com/perdidos';
+        var urlEnc = 'http://animalesperdidos.herokuapp.com/encontrados';
         this.fetchData(urlPer);
         this.fetchDataEnc(urlEnc);
     },
