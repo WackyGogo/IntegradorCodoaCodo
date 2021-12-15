@@ -12,7 +12,7 @@ function grabarPerdido() {
         color: c,
     }
 
-    let url = "http://animalesperdidos.herokuapp.com/perdidos";
+    let url = "postgres://quwhxshzqyjtzy:fc6be089f887c0a86c5b3b1c8a1eab1017e1494eb6d74a35e8b3b94ab8d77761@ec2-23-23-181-251.compute-1.amazonaws.com:5432/perdidos";
     var options = {
         method: 'POST',
         body: JSON.stringify(perdidos),
@@ -41,7 +41,7 @@ function grabarEncontrado() {
             sexo: s
         }
 
-        let urlEnc = "http://animalesperdidos.herokuapp.com/encontrados";
+        let urlEnc = "postgres://quwhxshzqyjtzy:fc6be089f887c0a86c5b3b1c8a1eab1017e1494eb6d74a35e8b3b94ab8d77761@ec2-23-23-181-251.compute-1.amazonaws.com:5432/encontrados";
         var options = {
             method: 'POST',
             body: JSON.stringify(encontrados),
